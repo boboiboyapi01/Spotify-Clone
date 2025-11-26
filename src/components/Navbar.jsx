@@ -6,29 +6,28 @@ import usersLogo from "../assets/users-people-svgrepo-com.svg";
 export default function Navbar() {
   return (
     <>
-      <nav className="navbar top-0 left-0 w-full h-15 flex items-center justify-between p-2 text-white">
+      <nav className="navbar md:flex top-0 left-0 w-full h-15 hidden items-center justify-between p-2 text-white">
         <button className="cursor-pointer ml-1">
           <FaSpotify className="w-8 h-8" />
         </button>
         <div className="flex gap-3 items-center">
           <button className="cursor-pointer transition-all duration-100">
-            <GoHome className="w-12 h-12 bg-[#272727] hover:size-[49px] hover:bg-[#303030] hover:fill-[#e4e0e0] rounded-full p-[11px] fill-[#ababab] transition duration-300" />
+            <GoHome className="w-12 h-12 bg-[#272727] hover:scale-110 hover:bg-[#303030] hover:fill-[#e4e0e0] rounded-full p-[11px] fill-[#ababab] transition duration-300" />
           </button>
           <label className="flex relative items-center w-100 group">
-            <IoIosSearch className="absolute cursor-pointer group-hover:fill-[#e4e0e0] transition duration-100 left-[7px] mt-0.5 w-6.5 h-6.5 text-[#ababab]" />
+            <IoIosSearch className="absolute cursor-pointer group-hover:fill-[#ffffff] transition duration-100 left-[7px] mt-0.5 w-6.5 h-6.5 text-[#ababab]" />
             <input
               type="text"
               placeholder="Apa yang ingin kamu putar?"
-              className="bg-[#272727] transition duration-300 group-hover:bg-[#303030] pl-10 text-white rounded-full w-100 h-12 px-4 py-2 hover:ring-[.3px] focus:outline-none focus:ring-1 focus:ring-white-500"
+              className="bg-[#272727] transition duration-300 group-hover:bg-[#303030] pl-10 text-white rounded-full w-100 h-12 px-4 py-2 group-hover:ring-[.3px] focus:outline-none focus:ring-1 focus:ring-white-500"
             />
             <svg
               width="24"
               height="24"
               data-encore-id="icon"
               role="img"
-              className="absolute right-3 text-gray-400 cursor-pointer hover:fill-[#e4e0e0] hover:size-[24.6px] transition duration-300"
+              className="absolute e-91000-icon e-91000-baseline right-3 text-gray-400 cursor-pointer hover:fill-[#e4e0e0] hover:scale-110 transition duration-300"
               aria-hidden="true"
-              class="e-91000-icon e-91000-baseline"
               viewBox="0 0 24 24"
               fill="#ababab"
             >
@@ -37,12 +36,12 @@ export default function Navbar() {
             </svg>
           </label>
         </div>
-        <button className="flex h-12 gap-2 items-center cursor-pointer group transition-colors -mr-20">
+        <button className="flex h-12 gap-2 hover:scale-103 items-center cursor-pointer group transition-colors -mr-20">
           <svg
             viewBox="0 0 64 64"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className="w-4.5 h-4.5 mt-0.5 group-hover:size-[19px] transition-all duration-100"
+            className="w-4.5 h-4.5 mt-0.5 transition-all duration-300"
           >
             <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
             <g
@@ -54,7 +53,7 @@ export default function Navbar() {
               <path
                 d="M31.667 45.024V18.024"
                 stroke="#ababab"
-                strokeWidth="4.736"
+                strokeWidth="5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 className="group-hover:stroke-white transition-colors duration-300"
@@ -62,7 +61,7 @@ export default function Navbar() {
               <path
                 d="M22.667 39.024L31.667 45.024L40.666 39.024"
                 stroke="#ababab"
-                strokeWidth="4.736"
+                strokeWidth="5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 className="group-hover:stroke-white transition-colors duration-300"
@@ -70,14 +69,14 @@ export default function Navbar() {
               <path
                 d="M31.667 58.191C46.3948 58.191 58.334 46.2518 58.334 31.5241C58.334 16.7963 46.3948 4.85706 31.667 4.85706C16.9392 4.85706 5 16.7963 5 31.5241C5 46.2518 16.9392 58.191 31.667 58.191Z"
                 stroke="#ababab"
-                strokeWidth="4.736"
+                strokeWidth="5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 className="group-hover:stroke-white transition-colors duration-300"
               ></path>
             </g>
           </svg>
-          <p className="font-semibold text-[14px] text-[#ababab] mr-7 -ml-0.5 group-hover:text-[#e4e0e0] transition-colors group-hover:text-[14.2px] duration-300">
+          <p className="font-semibold text-[14px] text-[#ababab] mr-7 -ml-1 group-hover:text-[#e4e0e0] transition-colors duration-300">
             Pasang Aplikasi
           </p>
         </button>
@@ -104,13 +103,13 @@ export default function Navbar() {
                     stroke-width="2"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    className="group-hover:stroke-[#e4e0e0] transition-colors"
+                    className="group-hover:stroke-[#e4e0e0] group-hover:scale-101 transition-colors"
                   ></path>{" "}
                 </g>
               </svg>
             </a>
           </li>
-          <li>
+          <li className="lg:block hidden">
             <a href="#about" className="group">
               <svg
                 width="24"
@@ -129,7 +128,7 @@ export default function Navbar() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="1.76"
-                    className="group-hover:stroke-[#e4e0e0] transition-colors"
+                    className="group-hover:stroke-[#e4e0e0] group-hover:scale-101 transition-colors"
                   />
                   <path
                     d="M23,28A7,7,0,0,0,9,28Z"
@@ -138,7 +137,7 @@ export default function Navbar() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="1.76"
-                    className="group-hover:stroke-[#e4e0e0] transition-colors"
+                    className="group-hover:stroke-[#e4e0e0] group-hover:scale-101 transition-colors"
                   />
                   <path
                     d="M24,14a5,5,0,1,0-4-8"
@@ -147,7 +146,7 @@ export default function Navbar() {
                     strokeLinecap="round"
                     strokeLinejoin="round"
                     strokeWidth="1.76"
-                    className="group-hover:stroke-[#e4e0e0] transition-colors"
+                    className="group-hover:stroke-[#e4e0e0] group-hover:scale-101 transition-colors"
                   />
                   <path
                     d="M25,24h6a7,7,0,0,0-7-7"
@@ -180,7 +179,7 @@ export default function Navbar() {
               </svg>
             </a>
           </li>
-          <li>
+          <li className="lg:block hidden">
             <a href="#contact">User</a>
           </li>
         </ul>
